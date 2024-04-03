@@ -22,7 +22,8 @@ function guessNumber() {
         incognita = userGuess;
         inputField.disabled = true; // Desactiva el campo de entrada correctamente
         guessButton.disabled = true; // Desactiva el botón de adivinar correctamente
-        guessButton.style.display = 'none'; // Oculta el botón de adivinar
+        document.getElementById('adivinar').style.display = 'none'; // Oculta el botón de adivinar
+
         restartButton.style.display = 'block';
     } else {
         intentos--; // Decrementar el contador de intentos
@@ -31,7 +32,7 @@ function guessNumber() {
             resultDisplay.innerHTML = `Game Over. El número era ${randomNumber}.`;
             inputField.disabled = true;
             guessButton.disabled = true;
-            guessButton.style.display = 'none'; // Oculta el botón de adivinar
+            document.getElementById('adivinar').style.display = 'none'; // Oculta el botón de adivinar
             restartButton.style.display = 'block';
         } else {
             if (userGuess < randomNumber) {
