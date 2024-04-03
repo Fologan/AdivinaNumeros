@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="canvas">
+        <div id="container">
+            <span>
+                <h1>Adivina el número</h1>
+                <p>Tenemos un número entre 1 y 100. ¿Puedes adivinarlo en 7 intentos?</p>
+                <input type="number" id="guessInput" placeholder="Ingresa tu suposición">
+                <button onclick="guessNumber()">Adivinar</button>
+                <button id="restartButton" style="display:none;">Reiniciar</button>
+                <p id="result"></p>
+                <div id="grafica" class="grafica"></div>
+            </span>
+        </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+
+</html>
